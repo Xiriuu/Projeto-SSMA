@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 /* CSS Reset */
 * {
     margin: 0;
@@ -59,10 +61,46 @@ html {
 }
 
 body {
-    background-color: var(--background-color);
-    color: var(--text-color);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+h3 {
+    margin: 10px;
+}
+
+#requirements {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--icon-color);
+}
+
+.list {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.list li,
+.list-incompatibility li {
+    margin: 10px 0;
+}
+
+.list-incompatibility {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    margin: 20px;
+    list-style-type: disc;
+    padding-left: 10px;
 }
 
 .banner {
@@ -83,17 +121,16 @@ body {
 .content p {
     margin: 5px 0;
     line-height: 1.5;
-    color: var(--text-color);
     font-weight: 500;
 }
 
 .content a.fispq {
-    color: var(--text-color);
     font-weight: 700;
     margin: 20px 10px;
     font-size: 1.2rem;
 }
 
+h3 .icon-circle-right,
 a .icon-circle-right {
     margin: 0 5px;
     color: var(--primary-color);
@@ -129,4 +166,15 @@ a .icon-circle-right {
     aspect-ratio: 1/1;
     border-radius: 10px;
     overflow: hidden;
+}
+
+.card-storage {
+    display: flex;
+}
+
+.card-storage img {
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    overflow: hidden;
+    object-fit: cover;
 }
