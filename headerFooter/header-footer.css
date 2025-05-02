@@ -50,15 +50,15 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-}
-
-footer p {
-    margin: 0;
     text-align: center;
 }
 
-footer:hover {
-    background-color: var(--primary-color);
-    color: white;
-    transition: all 0.3s ease-in-out;
+footer i {
+    font-size: 1.5rem;
+    color: var(--icon-color);
+    margin: 0 10px;
+}
+
+footer i:hover {
+    color: var(--primary-color);
 }

@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const loadFooter = async () => {
         try {
-            const response = await fetch("./headerFooter/footer.html");
+            const response = await fetch("/headerFooter/footer.html");
             if (!response.ok) {
                 throw new Error(
                     `Erro ao carregar o rodapé: ${response.statusText}`
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const loadHeader = async () => {
         try {
-            const response = await fetch("./headerFooter/header.html");
+            const response = await fetch("/headerFooter/header.html");
             if (!response.ok) {
                 throw new Error(
                     `Erro ao carregar o cabeçalho: ${response.statusText}`
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const linkHeaderCSS = () => {
         const link = document.createElement("link");
         link.rel = "stylesheet";
-        link.href = "./headerFooter/header-footer.css";
+        link.href = "/headerFooter/header-footer.css";
         document.head.appendChild(link);
     };
 
