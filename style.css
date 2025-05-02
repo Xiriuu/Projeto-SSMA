@@ -131,7 +131,7 @@ body {
     font-weight: 500;
 }
 
-.content a {
+.content a.fispq {
     color: var(--text-color);
     font-weight: 700;
     margin: 20px 10px;
@@ -150,6 +150,10 @@ a .icon-circle-right {
     max-height: 300px;
     gap: 10px;
     padding: 10px;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
 }
 
 .card {
