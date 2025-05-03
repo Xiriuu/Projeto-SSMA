@@ -1,0 +1,88 @@
+/* Reset e base */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: #005baa;
+    color: white;
+    padding: 1.5rem 1rem;
+    text-align: center;
+  }
+  
+  #page-title {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  /* Seções */
+  section {
+    background: white;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  section h2,
+  section h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #005baa;
+    margin-top: 0;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Lista da equipe */
+  .nossa-equipe ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nossa-equipe li {
+    margin-bottom: 0.8rem;
+    font-size: 1.05rem;
+  }
+  
+  .nossa-equipe a {
+    color: #005baa;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .nossa-equipe a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 600px) {
+    header {
+      padding: 1rem;
+    }
+  
+    section {
+      padding: 1rem;
+    }
+  
+    #page-title {
+      font-size: 1.6rem;
+    }
+  }
+  

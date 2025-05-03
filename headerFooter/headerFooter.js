@@ -44,9 +44,15 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("click", event => {
-    if (event.target.classList.contains("icon-menu")) {
-        event.target.classList.replace("icon-menu", "icon-cross");
-    } else if (event.target.classList.contains("icon-cross")) {
-        event.target.classList.replace("icon-cross", "icon-menu");
+    const icon = event.target;
+    const menu = document.getElementById("menu");
+
+    if (icon.classList.contains("icon-menu")) {
+        icon.classList.replace("icon-menu", "icon-cross");
+        if (menu) menu.classList.remove("hidden");
+    } else if (icon.classList.contains("icon-cross")) {
+        icon.classList.replace("icon-cross", "icon-menu");
+        if (menu) menu.classList.add("hidden");
     }
 });
+

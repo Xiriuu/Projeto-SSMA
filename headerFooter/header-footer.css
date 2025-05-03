@@ -4,6 +4,35 @@
     align-items: center;
 }
 
+/* Menu dropdown */
+.menu {
+    position: absolute;
+    top: 60px; /* ajuste conforme altura da navbar */
+    right: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    list-style: none;
+    padding: 10px;
+    z-index: 999;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+    display: none;
+}
+
+.menu li {
+    margin: 10px 0;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
 .icon-menu,
 .icon-cross {
     font-size: 2rem;
