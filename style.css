@@ -15,6 +15,10 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+main{
+    display: 1;
+}
+
 img,
 picture,
 video,
