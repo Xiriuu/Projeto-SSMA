@@ -1,81 +1,45 @@
-/* Main */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Configuração para o layout da página */
-html,
-body {
-    height: 100%; /* Garante que o HTML e o body ocupem toda a altura da janela */
-    display: flex;
-    flex-direction: column; /* Organiza os elementos em uma coluna */
-    margin: 0;
-    font-family: "Roboto", sans-serif;
-}
-
-main {
-    flex: 1; /* Faz o conteúdo principal ocupar o espaço restante */
-}
-
-section {
-    background: white;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
+.titulo-pagina {
     color: #004aad;
     font-size: 1.8rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
-/* Links */
+.card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    text-align: center;
+}
 
-/* Estilo para links */
-a {
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+}
+
+.card h3 {
+    font-size: 1.3rem;
     color: #004aad;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    margin-bottom: 0.5rem;
 }
 
-a:hover {
-    color: var(--primary-color);
-}
-
-/* Ajuste para listas */
-ul {
-    margin: 1rem 0;
-    padding-left: 1.5rem;
-    list-style-type: disc;
-}
-
-ul li {
-    margin-bottom: 1rem;
-    line-height: 1.5;
+.card p {
     font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
 }
 
-/* Responsividade */
-@media (max-width: 600px) {
-    section {
-        padding: 1rem;
-    }
+.card a {
+    color: #004aad;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 0.5rem;
+    text-decoration: none;
 }
 
-@media (max-width: 768px) {
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    ul li {
-        font-size: 0.9rem;
-    }
+.card a:hover {
+    text-decoration: underline;
 }
