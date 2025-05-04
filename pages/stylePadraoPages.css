@@ -80,3 +80,25 @@ ul li {
         font-size: 0.9rem;
     }
 }
+
+/* Responsividade para telas maiores (PC) */
+@media (min-width: 1024px) {
+    section {
+        max-width: 1200px; /* Define uma largura máxima para o conteúdo */
+        margin: 0 auto; /* Centraliza o conteúdo */
+        padding: 3rem; /* Adiciona mais espaçamento interno */
+    }
+
+    h2 {
+        font-size: 2rem; /* Aumenta o tamanho do título */
+    }
+
+    ul li {
+        font-size: 1.2rem; /* Aumenta o tamanho do texto das listas */
+        line-height: 1.8; /* Melhora o espaçamento entre linhas */
+    }
+
+    a {
+        font-size: 1.1rem; /* Aumenta o tamanho dos links */
+    }
+}

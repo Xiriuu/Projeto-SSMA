@@ -106,3 +106,47 @@ footer {
 .social-links img:hover {
     transform: scale(1.2); /* Mantendo o efeito de hover */
 }
+
+/* Responsividade para telas maiores (PC) */
+@media (min-width: 1024px) {
+    /* Header */
+    header {
+        padding: 2rem 4rem; /* Aumenta o espaçamento interno do header */
+    }
+
+    .header-container {
+        max-width: 1400px; /* Define uma largura máxima para o header */
+        margin: 0 auto; /* Centraliza o header */
+    }
+
+    .logo {
+        height: 3rem; /* Aumenta o tamanho do logotipo */
+    }
+
+    nav ul li a {
+        font-size: 1.5rem; /* Aumenta o tamanho do texto do menu */
+    }
+
+    nav ul li img {
+        height: 1.5rem; /* Aumenta o tamanho das imagens no menu */
+    }
+
+    /* Footer */
+    footer {
+        padding: 2rem 4rem; /* Aumenta o espaçamento interno do footer */
+        font-size: 1rem; /* Aumenta o tamanho do texto */
+    }
+
+    .footer-container {
+        max-width: 1400px; /* Define uma largura máxima para o footer */
+        margin: 0 auto; /* Centraliza o footer */
+    }
+
+    .footer-logo {
+        height: 3rem; /* Aumenta o tamanho do logotipo no footer */
+    }
+
+    .social-links img {
+        height: 2rem; /* Aumenta o tamanho dos ícones sociais */
+    }
+}

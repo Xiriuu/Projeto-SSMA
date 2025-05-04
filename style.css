@@ -1,5 +1,3 @@
-
-
 /* CSS Reset */
 * {
     margin: 0;
@@ -203,5 +201,66 @@ a .icon-circle-right {
 
     #banner-img {
         object-fit: contain; /* Ajusta a imagem para caber sem cortar em telas menores */
+    }
+}
+
+/* Responsividade para telas maiores (PC) */
+@media (min-width: 1024px) {
+    /* Banner */
+    .banner {
+        height: 400px; /* Aumenta a altura do banner */
+        margin-bottom: 2rem; /* Adiciona espaçamento abaixo do banner */
+    }
+
+    #banner-img {
+        object-fit: cover; /* Garante que a imagem cubra o banner */
+        height: 100%; /* Ajusta a altura para preencher o banner */
+    }
+
+    /* Container de cards */
+    .container {
+        max-width: 1400px; /* Define uma largura máxima para o container */
+        margin: 0 auto; /* Centraliza o container */
+        gap: 30px; /* Aumenta o espaçamento entre os cards */
+        padding: 2rem; /* Adiciona espaçamento interno */
+    }
+
+    .card {
+        width: 300px; /* Aumenta o tamanho dos cards */
+        height: auto; /* Ajusta a altura automaticamente */
+    }
+
+    /* Títulos */
+    h1 {
+        font-size: 3rem; /* Aumenta o tamanho do título principal */
+        margin: 2rem 0; /* Adiciona espaçamento acima e abaixo */
+    }
+
+    h2 {
+        font-size: 2.5rem; /* Aumenta o tamanho dos subtítulos */
+        margin-bottom: 1.5rem; /* Adiciona espaçamento abaixo */
+    }
+
+    /* Conteúdo */
+    .content {
+        max-width: 1200px; /* Define uma largura máxima para o conteúdo */
+        margin: 0 auto; /* Centraliza o conteúdo */
+        padding: 3rem; /* Adiciona espaçamento interno */
+    }
+
+    .content p {
+        font-size: 1.2rem; /* Aumenta o tamanho do texto */
+        line-height: 1.8; /* Melhora o espaçamento entre linhas */
+    }
+
+    .content a.fispq {
+        font-size: 1.5rem; /* Aumenta o tamanho do link */
+        margin: 2rem 0; /* Adiciona espaçamento acima e abaixo */
+    }
+
+    /* Footer */
+    footer {
+        padding: 2rem 4rem; /* Aumenta o espaçamento interno */
+        font-size: 1rem; /* Aumenta o tamanho do texto */
     }
 }

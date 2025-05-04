@@ -87,3 +87,83 @@ body {
         padding: 1rem;
     }
 }
+
+/* Responsividade para telas maiores (PC) */
+@media (min-width: 1024px) {
+    /* Ajuste do banner */
+    .banner {
+        padding: 4rem; /* Aumenta o espaçamento interno */
+        flex-direction: row; /* Alinha os elementos horizontalmente */
+        justify-content: space-between; /* Distribui os elementos */
+        text-align: left; /* Alinha o texto à esquerda */
+    }
+
+    .banner img {
+        max-width: 200px; /* Aumenta o tamanho das imagens */
+    }
+
+    .banner h1 {
+        font-size: 2.5rem; /* Aumenta o tamanho do título */
+    }
+
+    .banner h2 {
+        font-size: 2rem; /* Aumenta o tamanho do subtítulo */
+    }
+
+    .banner p {
+        font-size: 1.2rem; /* Aumenta o tamanho do texto */
+    }
+
+    /* Ajuste do conteúdo */
+    .content {
+        max-width: 1200px; /* Aumenta a largura máxima do conteúdo */
+        padding: 3rem; /* Adiciona mais espaçamento interno */
+        margin: 2rem auto; /* Adiciona espaçamento externo */
+    }
+
+    .content h2 {
+        font-size: 2rem; /* Aumenta o tamanho do título */
+    }
+
+    .content p {
+        font-size: 1.2rem; /* Aumenta o tamanho do texto */
+        line-height: 2; /* Melhora o espaçamento entre linhas */
+    }
+
+    /* Ajuste do header */
+    .header {
+        display: flex;
+        align-items: center; /* Alinha os itens verticalmente */
+        justify-content: space-between; /* Distribui os itens horizontalmente */
+        gap: 2rem; /* Adiciona espaçamento entre os elementos */
+        padding: 2rem 3rem; /* Aumenta o espaçamento interno */
+    }
+
+    .header img {
+        max-width: 150px; /* Ajusta o tamanho do logotipo */
+        height: auto; /* Mantém a proporção */
+    }
+
+    .header div {
+        display: flex;
+        flex-direction: column; /* Organiza os textos verticalmente */
+        justify-content: center; /* Centraliza os textos verticalmente */
+        gap: 0.5rem; /* Espaçamento entre os textos */
+    }
+
+    .uema-text {
+        font-size: 1.8rem; /* Aumenta o tamanho do texto */
+        font-weight: bold;
+        text-align: left; /* Alinha o texto à esquerda */
+    }
+
+    .uema-subtext {
+        font-size: 1.2rem; /* Aumenta o tamanho do subtítulo */
+        text-align: left; /* Alinha o texto à esquerda */
+    }
+
+    .profittec-subtext {
+        font-size: 1rem; /* Ajusta o tamanho do texto */
+        text-align: left; /* Alinha o texto à esquerda */
+    }
+}
