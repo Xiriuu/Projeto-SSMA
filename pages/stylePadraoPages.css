@@ -1,129 +1,82 @@
+/* Main */
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-/* CSS Reset */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html,
-body {
-    height: 100%;
-    font-family: "Roboto", sans-serif;
+/* Configuração para o layout da página */
+html, body {
+    height: 100%; /* Garante que o HTML e o body ocupem toda a altura da janela */
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em uma coluna */
+    margin: 0;
 }
 
-img,
-picture,
-video,
-canvas,
-svg {
-    display: block;
-    max-width: 100%;
+main {
+    flex: 1; /* Faz o conteúdo principal ocupar o espaço restante */
 }
 
-input,
-button,
-textarea,
-select {
-    font: inherit;
+
+
+section {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+h2 {
+    color: #004aad;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+/* Links */
+
+/* Estilo para links */
 a {
+    color: #004aad;
     text-decoration: none;
-    color: inherit;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-ul,
-ol {
-    list-style: none;
+a:hover {
+    color: #ff6600;
 }
 
-/* variables */
-:root {
-    --primary-color: #3498db;
-    --secondary-color: #2ecc71;
-    --background-color: #fff;
-
-    --text-color: #000;
-
-    --title-font-size: 2rem;
-    --subtitle-font-size: 1.5rem;
+/* Ajuste para listas */
+ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+    list-style-type: disc;
 }
 
-/* Global Styles */
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    -webkit-font-smoothing: antialiased;
-}
-
-
-#search:focus {
-    outline: none;
-}
-
-#search::placeholder {
-    color: #828282;
-}
-
-.banner {
-    display: flex;
-    margin: 5px;
-    max-width: 100%;
-    max-height: 150px;
-}
-
-#banner-img {
-    align-items: center;
-    margin: 5px;
-    border-radius: 10px;
-    object-fit: cover;
-    overflow: hidden;
-}
-
-.content p {
-    margin: 5px 0;
+ul li {
+    margin-bottom: 1rem;
     line-height: 1.5;
-    color: var(--text-color);
-    font-weight: 500;
+    font-size: 1rem;
 }
 
-.content a {
-    color: var(--text-color);
-    font-weight: 700;
-    margin: 20px 10px;
-    font-size: 1.2rem;
+/* Responsividade */
+@media (max-width: 600px) {
+    
+    section {
+        padding: 1rem;
+    }
 }
 
-a .icon-circle-right {
-    margin: 0 5px;
-    color: var(--primary-color);
-}
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.5rem;
+    }
 
-.container {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    max-height: 300px;
-    gap: 10px;
-    padding: 10px;
-}
-
-.card {
-    flex: 0 0 auto;
-    scroll-snap-align: center;
-    width: 200px;
-}
-
-.card img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1/1;
-    border-radius: 10px;
-    overflow: hidden;
+    ul li {
+        font-size: 0.9rem;
+    }
 }

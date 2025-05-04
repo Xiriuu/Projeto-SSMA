@@ -1,64 +1,108 @@
-.navbar {
+body {
+    margin-top: 4rem; /* Ajuste o valor para corresponder à altura do header */
+}
+
+header {
+    position: fixed; /* Torna o header fixo */
+    top: 0; /* Fixa no topo da página */
+    left: 0; /* Fixa no lado esquerdo */
+    width: 100%; /* Faz o header ocupar toda a largura */
+    z-index: 1000;
+    position: fixed;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
+    background-color: #9bbee6;
+    color: #008bfd;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(55, 54, 54, 0.1);
+    margin: 0;
+    
 }
 
-.icon-menu,
-.icon-cross {
-    font-size: 2rem;
-    color: var(--primary-color);
-    margin: auto;
-}
-
-.icon-search {
-    font-size: 1.5rem;
-    color: var(--icon-color);
-}
-
-.search-bar {
-    width: 80%;
+.header-container {
     display: flex;
     align-items: center;
-    margin: 20px 0 20px 20px;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: var(--background-color-search);
-}
-
-#search {
+    justify-content: space-between;
     width: 100%;
-    padding: 5px;
-    margin-left: 10px;
-    font-size: 16px;
-    border: none;
-    background-color: var(--background-color-search);
+    max-height: 1rem;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
-#search:focus {
-    outline: none;
+.logo {
+    height: 2rem;
+    margin-right: 2px;
 }
 
-#search::placeholder {
-    color: #828282;
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+/* Ajustando as imagens no menu */
+nav ul li a {
+    display: flex; /* Para alinhar a imagem e o texto lado a lado */
+    align-items: center; /* Centraliza verticalmente */
+    text-decoration: none;
+    color: #000000;
+    font-size: 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+/* Imagens no menu */
+nav ul li img {
+    height: 1rem; /* Ajustando a altura das imagens no menu */
+    width: auto; /* Mantendo a proporção */
+    margin-right: 0.5rem; /* Espaço entre a imagem e o texto */
 }
 
 footer {
-    color: var(--text-color);
-    background-color: var(--background-color-search);
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #9bbee6;
+    color: #000000;
+    padding: 1rem 2rem;
     text-align: center;
+    font-size: 0.7rem;
 }
 
-footer i {
-    font-size: 1.5rem;
-    color: var(--icon-color);
-    margin: 0 10px;
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
-footer i:hover {
-    color: var(--primary-color);
+.footer-logo {
+    margin-right: 0.5rem;
+    height: 2rem;
+}
+
+.social-links a {
+    margin: 0 0.5rem;
+    display: inline-block;
+}
+
+/* Imagens no footer */
+.social-links img {
+    height: 1.5rem; /* Ajustando a altura das imagens no footer */
+    width: auto; /* Mantendo a proporção */
+    transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.2); /* Mantendo o efeito de hover */
 }
