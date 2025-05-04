@@ -1,8 +1,8 @@
 /* Main */
-
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
     margin: 0;
     padding: 0;
@@ -10,18 +10,18 @@
 }
 
 /* Configuração para o layout da página */
-html, body {
+html,
+body {
     height: 100%; /* Garante que o HTML e o body ocupem toda a altura da janela */
     display: flex;
     flex-direction: column; /* Organiza os elementos em uma coluna */
     margin: 0;
+    font-family: "Roboto", sans-serif;
 }
 
 main {
     flex: 1; /* Faz o conteúdo principal ocupar o espaço restante */
 }
-
-
 
 section {
     background: white;
@@ -47,7 +47,7 @@ a {
 }
 
 a:hover {
-    color: #ff6600;
+    color: var(--primary-color);
 }
 
 /* Ajuste para listas */
@@ -65,7 +65,6 @@ ul li {
 
 /* Responsividade */
 @media (max-width: 600px) {
-    
     section {
         padding: 1rem;
     }

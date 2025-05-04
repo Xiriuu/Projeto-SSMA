@@ -1,4 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* CSS Reset */
 * {
@@ -8,7 +10,8 @@
 }
 
 /* Configuração para o layout da página */
-html, body {
+html,
+body {
     height: 100%; /* Garante que o HTML e o body ocupem toda a altura da janela */
     display: flex;
     flex-direction: column; /* Organiza os elementos em uma coluna */
@@ -73,6 +76,7 @@ html {
 }
 
 body {
+    font-family: "Roboto", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
